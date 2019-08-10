@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.track.core.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+  <!-- Framework Controller Configuration -->
+  <servlet>
+    <servlet-name>DispatchController</servlet-name>
+    <servlet-class>com.track.core.control.DispatchController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExportController</servlet-name>
+    <servlet-class>com.track.core.control.ExportController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReportController</servlet-name>
+    <servlet-class>com.track.core.control.ReportController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UIController</servlet-name>
+    <servlet-class>com.track.core.control.UIController</servlet-class>
+  </servlet>
+  <!-- Framework Controller Mapping -->
+  <servlet-mapping>
+    <servlet-name>DispatchController</servlet-name>
+    <url-pattern>/DispatchController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportController</servlet-name>
+    <url-pattern>/ExportController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReportController</servlet-name>
+    <url-pattern>/ReportController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UIController</servlet-name>
+    <url-pattern>/UIController</url-pattern>
+  </servlet-mapping>
+  <!-- Supported Export Modes of ExportController  -->
+  <servlet>
+    <servlet-name>ExportPDF</servlet-name>
+    <servlet-class>com.track.core.export.ExportPDF</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExportTXT</servlet-name>
+    <servlet-class>com.track.core.export.ExportTXT</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExportXLS</servlet-name>
+    <servlet-class>com.track.core.export.ExportXLS</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.track.dae.action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.track.dae.action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangequestionAction</servlet-name>
+    <servlet-class>com.track.dae.action.ChangequestionAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.track.dae.action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.track.dae.action.RecoverPasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewServlet</servlet-name>
+    <servlet-class>com.track.dae.action.ViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateAction</servlet-name>
+    <servlet-class>com.track.dae.action.UpdateAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileUploadAction</servlet-name>
+    <servlet-class>com.track.dae.action.FileUploadAction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ExportPDF</servlet-name>
+    <url-pattern>/ExportPDF</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportTXT</servlet-name>
+    <url-pattern>/ExportTXT</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExportXLS</servlet-name>
+    <url-pattern>/ExportXLS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangequestionAction</servlet-name>
+    <url-pattern>/ChangequestionAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewServlet</servlet-name>
+    <url-pattern>/viewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAction</servlet-name>
+    <url-pattern>/updateAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileUploadAction</servlet-name>
+    <url-pattern>/fileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>checkuseraction</servlet-name>
+  <servlet-class>com.track.dae.action.ChekUserAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>checkuseraction</servlet-name>
+ <url-pattern>/ChekUserAction</url-pattern>
+ </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LogoutAction</servlet-name>
+  <servlet-class>com.track.dae.action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadAction</servlet-name>
+    <servlet-class>co.track.fss.action.UploadAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadAction</servlet-name>
+    <servlet-class>com.track.fss.action.DownloadAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OwnFileAction</servlet-name>
+    <servlet-class>com.track.fss.action.OwnFileAction</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+  <servlet-name>LogoutAction</servlet-name>
+ <url-pattern>/LogoutAction</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadAction</servlet-name>
+    <url-pattern>/UploadAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadAction</servlet-name>
+    <url-pattern>/DownloadAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OwnFileAction</servlet-name>
+    <url-pattern>/OwnFileAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>addProjects</servlet-name>
+  <servlet-class>com.track.project.action.AddProjects</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addProjects</servlet-name>
+  <url-pattern>/addProjects</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>updateProjDetails</servlet-name>
+  <servlet-class>com.track.project.action.ModifyProjDetailsAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updateProjDetails</servlet-name>
+  <url-pattern>/updateProjDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>deleteProjects</servlet-name>
+  <servlet-class>com.track.project.action.DeleteProjDtlsAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>deleteProjects</servlet-name>
+  <url-pattern>/deleteProjects</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>RegisterEmployees</servlet-name>
+  <servlet-class>com.track.project.action.RegisterEmployeesAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterEmployees</servlet-name>
+  <url-pattern>/RegisterEmployees</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AssignProjToTls</servlet-name>
+  <servlet-class>com.track.project.action.AssignProjectToTls</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AssignProjToTls</servlet-name>
+  <url-pattern>/AssignProjToTls</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>assignTeamsToTls</servlet-name>
+  <servlet-class>com.track.project.action.AssignTeamsToTlsAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>assignTeamsToTls</servlet-name>
+  <url-pattern>/assignTeamsToTls</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+  <servlet-name>AddModulesByTl</servlet-name>
+  <servlet-class>com.track.project.action.AddModulesAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddModulesByTl</servlet-name>
+  <url-pattern>/AddModulesByTl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddSubTasks</servlet-name>
+  <servlet-class>com.track.project.action.AddSubTaskAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddSubTasks</servlet-name>
+  <url-pattern>/AddSubTasks</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AssignTasksToDev</servlet-name>
+  <servlet-class>com.track.project.action.AsgnTasksToDevByTlAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AssignTasksToDev</servlet-name>
+  <url-pattern>/AssignTasksToDev</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>sendQuery</servlet-name>
+  <servlet-class>com.track.project.action.SendQueryAction</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>sendQuery</servlet-name>
+  <url-pattern>/sendQuery</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>sendQueryByTl</servlet-name>
+  <servlet-class>com.track.project.action.SendQueryAction2</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>sendQueryByTl</servlet-name>
+  <url-pattern>/sendQueryByTl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SubmitWorkStatusToTl</servlet-name>
+  <servlet-class>com.track.project.action.SubmitStatusToTl</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SubmitWorkStatusToTl</servlet-name>
+  <url-pattern>/SubmitWorkStatusToTl</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>submitToAdmin</servlet-name>
+  <servlet-class>com.track.project.action.SubmitReportByTlToAdmin</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>submitToAdmin</servlet-name>
+  <url-pattern>/submitToAdmin</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>LoginForm.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+

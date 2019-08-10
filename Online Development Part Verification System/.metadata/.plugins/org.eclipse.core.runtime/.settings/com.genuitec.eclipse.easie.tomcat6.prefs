@@ -1,0 +1,13 @@
+ENDORSED_DIRS="D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0/common/endorsed"
+JDK_HOME=C\:\\Program Files\\Java\\jre1.8.0_111
+LIBRARY_PATH="C\:\\Program Files\\Java\\jre1.8.0_111\\bin;D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\bin"
+SERVER_ENABLEMENT=true
+TOMCAT_BASE=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0
+TOMCAT_HOME=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0
+TOMCAT_TEMP=D\:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\temp
+eclipse.preferences.version=1
+migration.configHash=3ec075109369d9ea67616a13886bf464
+migration.performed.operation.easie.migrate.deployments=1.0
+migration.performed.operation.easie.tomcat.migrate.runtime=1.0
+migration.performed.operation.easie.tomcat.migrate.server=1.0
+migration.userInformed=3ec075109369d9ea67616a13886bf464

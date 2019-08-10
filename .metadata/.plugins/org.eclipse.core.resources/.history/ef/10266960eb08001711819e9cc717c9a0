@@ -1,0 +1,10 @@
+# Sample ResourceBundle properties file
+
+JNDI_NAME=java:com/env/Oracle/jndi
+db.login= 	
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@localhost:1521:XE
+duser=mainproj
+dpass=mainproj
+logfile=D\:/log/sample_log.txt
+dbname=oracle
